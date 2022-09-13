@@ -25,8 +25,8 @@ export default (props) => {
                         <Card title="#09 - Condicional 2" color="#982395"> 
                         <UsuarioInfo user={{name: 'Guilherme'}}/>
 
-                        <UsuarioInfo user={{email: 'g@mattos.com.br'}}/>
-                        
+                        {/* <UsuarioInfo user={{email: 'g@mattos.com.br'}}/> */}
+
                         </Card> 
 
                         <Card title="#08 - Condicional" color="#982395"> 
