@@ -8,6 +8,7 @@ import ComParametro from "./components/basics/ComParametro";
 import Fragment from "./components/basics/Fragment";
 import RadomNumber from "./components/basics/RadomNumber";
 import Card from "./components/layout/Card";
+import MemberFamily from './components/basics/MemberFamily';
 
 
 
@@ -19,7 +20,14 @@ export default (props) => {
         <div className="Cards">
 
                          <Card title="#05 - Família" color="#0120"> 
-                         <Family sobrenome="Mattos" />
+                         <Family sobrenome="Mattos" > 
+
+                        <MemberFamily name="Guilherme" /> 
+                        <MemberFamily name="Arthur" /> 
+                        <MemberFamily name="Fernanda" />
+
+                         
+                         </Family>
                         </Card> 
 
                 
