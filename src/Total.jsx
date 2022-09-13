@@ -10,6 +10,7 @@ import RadomNumber from "./components/basics/RadomNumber";
 import Card from "./components/layout/Card";
 import MemberFamily from './components/basics/MemberFamily';
 import ListaProdutos from './components/repeticao/ListaProdutos';
+import ParOuImpar from './components/condicional/ParOuImpar';
 
 
 
@@ -19,6 +20,10 @@ export default (props) => {
                 <div className="App">      
                 <h1>Fundamentos React</h1>   
                  <div className="Cards">
+
+                        <Card title="#08 - Condicional" color="#982395"> 
+                        <ParOuImpar number={12}/>
+                        </Card> 
 
                         <Card title="#07 - Lista produtos" color="#3A9AD9"> 
                         <ListaProdutos/>
