@@ -1,7 +1,7 @@
 import './Total.css'
 import React from "react";
 
-
+import ListaAlunos from './components/repeticao/ListaAlunos';
 import Family from './components/basics/Family';
 import First from "./components/basics/First";
 import ComParametro from "./components/basics/ComParametro";
@@ -18,6 +18,10 @@ export default (props) => {
                 <div className="App">      
                 <h1>Fundamentos React</h1>   
         <div className="Cards">
+
+                        <Card title="#06 - Lista alunos" color="#F22"> 
+                        <ListaAlunos/>
+                        </Card> 
 
                          <Card title="#05 - Família" color="#0120"> 
                          <Family sobrenome="Mattos" > 
