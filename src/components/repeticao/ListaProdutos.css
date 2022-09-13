@@ -1,0 +1,19 @@
+.Table { 
+    width: 100%;
+    margin: 0;
+}
+
+.Table table { 
+    width: 100%;
+    border: 1px solid black;
+}
+
+.Table th { 
+    
+    background-color: #7777f3;
+    color: white;
+}
+
+.Table .trPar { 
+    background-color: #c3c3f5;
+}
