@@ -14,6 +14,7 @@ import ParOuImpar from './components/condicional/ParOuImpar';
 import UsuarioInfo from './components/condicional/UsuarioInfo';
 import DiretaPai from './components/comunicacao/DiretaPai';
 import IndiretaPai from './components/comunicacao/IndiretaPai';
+import Input from './components/formulario/Input';
 
 
 
@@ -23,6 +24,10 @@ export default (props) => {
                 <div className="App">      
                 <h1>Fundamentos React</h1>   
                  <div className="Cards">
+
+                        <Card title="#12 - Input" color="#e45f56"> 
+                        <Input />
+                        </Card> 
 
                          <Card title="#11 - Comunicação Indireta" color="#8BAD39"> 
                         <IndiretaPai />
