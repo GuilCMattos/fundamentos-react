@@ -1,6 +1,7 @@
 import './Total.css'
 import React from "react";
 
+import Contador from './components/contador/Contador';
 import ListaAlunos from './components/repeticao/ListaAlunos';
 import Family from './components/basics/Family';
 import First from "./components/basics/First";
@@ -24,6 +25,10 @@ export default (props) => {
                 <div className="App">      
                 <h1>Fundamentos React</h1>   
                  <div className="Cards">
+
+                        <Card title="#13 - Contador" color="#424242"> 
+                        <Contador inicialNumber={10} />
+                        </Card> 
 
                         <Card title="#12 - Input" color="#e45f56"> 
                         <Input />
