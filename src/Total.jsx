@@ -1,4 +1,4 @@
-
+import './Total.css'
 import React from "react";
 
 import First from "./components/basics/First";
@@ -9,10 +9,13 @@ import Card from "./components/layout/Card";
 
 
 
-export default props => 
-        <div id="app">      
+export default (props) => { 
+        return ( 
 
-                    <h1>Fundamentos React</h1>   
+                <div className="App">      
+                <h1>Fundamentos React</h1>   
+        <div className="Cards">
+                
                     <Card title="#04 - Desafio Aleatório"> 
                         <RadomNumber max={60} min={1} />
                     </Card> 
@@ -28,7 +31,11 @@ export default props =>
                     <Card title="#01 - Primeiro"> 
                         <First/>
                     </Card> 
-                    
-                    
+
+        </div>  
 
             </div>
+        
+        )
+}
+        
