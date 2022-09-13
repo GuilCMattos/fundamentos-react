@@ -1,6 +1,10 @@
 import './Contador.css'
 import React, { Component } from "react";
 
+import Display from './Display';
+import Buttons from './Buttons';
+import StepForm from './StepForm';
+
 export default class Contador extends Component { 
 
     state = { 
@@ -20,10 +24,10 @@ export default class Contador extends Component {
         });
     }
 
-    setStep = (e) => { 
+    setStep = (newStep) => { 
 
         this.setState({
-            step: +e.target.value,
+            step: newStep,
         })
 
     }
@@ -33,15 +37,16 @@ export default class Contador extends Component {
         return (
             <div className='Contador'>
                 <h2>Contador</h2>
-                <h3>{this.state.number}</h3>
+                
+                <Display number={this.state.number} />
 
                 <div>
-                    <label htmlFor="">Passo: </label>
-                    <input id="step" type="number" value={this.state.step} onChange={this.setStep} />
+                   <StepForm step={this.state.step} setStep={this.setStep} />
                 </div>
 
-               <button onClick={this.inc}> +</button>
-               <button onClick={this.dec}> -</button>
+                <Buttons inc={this.inc} dec={this.dec} />
+
+               
             </div>
         )
     }
