@@ -11,6 +11,7 @@ import Card from "./components/layout/Card";
 import MemberFamily from './components/basics/MemberFamily';
 import ListaProdutos from './components/repeticao/ListaProdutos';
 import ParOuImpar from './components/condicional/ParOuImpar';
+import UsuarioInfo from './components/condicional/UsuarioInfo';
 
 
 
@@ -20,6 +21,13 @@ export default (props) => {
                 <div className="App">      
                 <h1>Fundamentos React</h1>   
                  <div className="Cards">
+
+                        <Card title="#09 - Condicional 2" color="#982395"> 
+                        <UsuarioInfo user={{name: 'Guilherme'}}/>
+
+                        <UsuarioInfo user={{email: 'g@mattos.com.br'}}/>
+                        
+                        </Card> 
 
                         <Card title="#08 - Condicional" color="#982395"> 
                         <ParOuImpar number={12}/>
