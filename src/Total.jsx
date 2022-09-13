@@ -16,19 +16,19 @@ export default (props) => {
                 <h1>Fundamentos React</h1>   
         <div className="Cards">
                 
-                    <Card title="#04 - Desafio Aleatório"> 
+                    <Card title="#04 - Desafio Aleatório" color="#090"> 
                         <RadomNumber max={60} min={1} />
                     </Card> 
 
-                    <Card title="#03 - Fragmento"> 
+                    <Card title="#03 - Fragmento" color="#00F"> 
                          <Fragment />
                     </Card> 
 
-                    <Card title="#02 - Aluno"> 
+                    <Card title="#02 - Aluno" color="#F00"> 
                           <ComParametro title="Situação Aluno" aluno="Pedro Silva" nota={6} />
                     </Card> 
 
-                    <Card title="#01 - Primeiro"> 
+                    <Card title="#01 - Primeiro" color="#F80"> 
                         <First/>
                     </Card> 
 
