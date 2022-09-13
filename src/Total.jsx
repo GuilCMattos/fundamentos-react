@@ -12,6 +12,7 @@ import MemberFamily from './components/basics/MemberFamily';
 import ListaProdutos from './components/repeticao/ListaProdutos';
 import ParOuImpar from './components/condicional/ParOuImpar';
 import UsuarioInfo from './components/condicional/UsuarioInfo';
+import DiretaPai from './components/comunicacao/DiretaPai';
 
 
 
@@ -21,6 +22,11 @@ export default (props) => {
                 <div className="App">      
                 <h1>Fundamentos React</h1>   
                  <div className="Cards">
+
+                        <Card title="#09 - Condicional" color="#593230"> 
+                        <DiretaPai />
+                        </Card> 
+
 
                         <Card title="#09 - Condicional 2" color="#982395"> 
                         <UsuarioInfo user={{name: 'Guilherme'}}/>
